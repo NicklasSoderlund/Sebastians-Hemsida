@@ -1,0 +1,13 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: v.$primaryColor;
+}
+
+body {
+    overflow-x: hidden;
+}
+

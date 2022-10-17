@@ -1,0 +1,50 @@
+@use "variables" as v;
+
+@mixin desktop {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin team-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em 0;
+    @include desktop {
+        width: 50vw;
+    
+    }
+    h3 {
+       color: v.$secondaryColor;
+       text-align: center;
+    } 
+
+    img {
+        border-radius: 50%;
+        width: 60%;
+        margin: 1em 0;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: v.$secondaryColor;
+        text-align: left;
+        padding: 2.5em;
+        border-radius: 5px;
+        span {
+            color: v.$secondaryColor;
+            font-size: 1.1em;
+        }
+    }
+
+    i {
+        color: v.$secondaryColor;
+        font-size: 2em;
+    }
+  
+}
+
