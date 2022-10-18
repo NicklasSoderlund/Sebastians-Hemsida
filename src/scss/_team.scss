@@ -1,6 +1,14 @@
 @use "mixins" as m;
 @use "variables" as v;
 
+#meetTeam {
+  color: v.$secondaryColor;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2em;
+  width: 100%;
+}
+
 .team {
     width: 100%;
     margin: 0;
@@ -10,6 +18,7 @@
     align-items: center;
     color: black;
 
+
     @include m.desktop {
       flex-direction: row;
       flex-wrap: wrap;
@@ -18,7 +27,6 @@
     }
     &__presentation {
       @include m.team-info;
-      
     }
     &__icon {
       i {
