@@ -10,21 +10,21 @@
   </head>
   <body>
 
-    <section class="landingpage"> 
+    <section class="landingpage" id="home"> 
       
       <!-- Background image  -->
       <div class="landingpage__image">
         <!--Navigation bar-->
         <header>
-          <nav class="top-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-button-container" for="menu-toggle">
-              <div class="menu-button"></div>
+          <nav class="navbar">
+            <input class="navbar__menu-toggle" id="menu-toggle" type="checkbox" />
+            <label class="navbar__menu-button-container" for="menu-toggle">
+              <div class="navbar__menu-button"></div>
             </label>
-            <ul class="menu">
-              <li><a href="">Hem</a></li>
-              <li><a href="">Om</a></l>
-              <li><a href="">Kontakt</a></li>
+            <ul class="navbar__menu">
+              <li><a href="home">Hem</a></li>
+              <li><a href="#team">Om</a></l>
+              <li><a href="#contact">Kontakt</a></li>
             </ul>
           </nav>
         </header>
@@ -34,13 +34,16 @@
          <h2>A journey through time and sheep</h2>
          <h2>To see how ...cotton ... is mage, made i mean...</h2>
         </div>
-        <div class="landingpage__icon"><i class="fa-solid fa-circle-arrow-down"></i> </div>
+        <div class="landingpage__icon"> <a href="#team"><i class="fa-solid fa-circle-arrow-down"></i></a> </div>
     </div>
 
     
     </section>
+        
+     <!--Meet the team section-->
+    <section class="team" id="team">
 
-    <section class="team">
+        <!--Team member presentations-->
       <div class="team__presentation">
         <h3>Rakib</h3>
         <img src="/src/assets/profiles/Rakib_Square.png" alt="Picture of team member">
@@ -77,11 +80,12 @@
         </p>
       </div>
     </section>
-
-    <footer class="contact">
-
+      
+     <!--Footer with contact info-->
+    <footer class="contact" id="contact">
     <section class="contact__container">
-
+         
+       <!--sections of content-->
       <section class="contact__section">
         <span>Tegel Consulting AB</span>
         <span>Agatvägen 18</span>
@@ -110,7 +114,7 @@
     </section>
 
     </section>
-
     </footer>
+
   </body>
 </html>

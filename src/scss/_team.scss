@@ -11,6 +11,8 @@
     @include m.desktop {
       flex-direction: row;
       flex-wrap: wrap;
+      width: 95%;
+      margin: auto;
     }
     &__presentation {
       @include m.team-info;
